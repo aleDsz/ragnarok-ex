@@ -8,5 +8,8 @@ defmodule Ragnarok.MixProject do
       deps: deps()
     ]
 
-  defp deps, do: []
+  defp deps,
+    do: [
+      {:mix_test_watch, "~> 1.0", only: [:dev, :test], runtime: false}
+    ]
 end
